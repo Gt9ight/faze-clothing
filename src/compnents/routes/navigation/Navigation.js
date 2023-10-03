@@ -1,5 +1,7 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
+import CartIcon from '../../cart-icon/Cart-icon'
+import CartDropdown from '../../cart-dropdown/CartDropdown'
 import { Fragment, useContext } from 'react'
 import { UserContext } from '../../../context/User-context'
 import { ReactComponent as CrwnLogo } from '../../../assets/crown.svg'
@@ -27,9 +29,11 @@ const Navigation =() => {
                     <Link className='nav-link' to='/auth'>SIGN IN</Link>
                     )
                 }
+                <CartIcon />
 
 
             </div>
+            <CartDropdown />
         </div>
         <Outlet />
     </Fragment>

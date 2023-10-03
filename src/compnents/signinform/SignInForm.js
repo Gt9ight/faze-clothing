@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-import Forminput from '../form-input/Forminput';
+import Forminput from '../form-input/FormInput';
 import './SignInForm.scss'
 import Button from '../button/Button';
 
